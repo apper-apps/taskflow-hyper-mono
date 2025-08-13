@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "name": "Work",
+    "color": "#6366F1",
+    "icon": "Briefcase",
+    "taskCount": 4
+  },
+  {
+    "Id": 2,
+    "name": "Personal",
+    "color": "#10B981",
+    "icon": "User",
+    "taskCount": 4
+  },
+  {
+    "Id": 3,
+    "name": "Learning",
+    "color": "#F59E0B",
+    "icon": "BookOpen",
+    "taskCount": 3
+  },
+  {
+    "Id": 4,
+    "name": "Travel",
+    "color": "#EF4444",
+    "icon": "MapPin",
+    "taskCount": 1
+  },
+  {
+    "Id": 5,
+    "name": "Health",
+    "color": "#8B5CF6",
+    "icon": "Heart",
+    "taskCount": 0
+  },
+  {
+    "Id": 6,
+    "name": "Finance",
+    "color": "#06B6D4",
+    "icon": "DollarSign",
+    "taskCount": 0
+  }
+]
