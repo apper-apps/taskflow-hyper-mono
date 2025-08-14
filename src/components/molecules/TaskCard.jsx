@@ -6,14 +6,14 @@ import Checkbox from "@/components/atoms/Checkbox";
 import Badge from "@/components/atoms/Badge";
 import Button from "@/components/atoms/Button";
 
-const TaskCard = ({ 
+const TaskCard = React.forwardRef(({ 
   task, 
   category,
   onToggleComplete, 
   onEdit, 
   onDelete,
   className = "" 
-}) => {
+}, ref) => {
   const getPriorityConfig = (priority) => {
     switch (priority) {
       case "high":
@@ -70,7 +70,8 @@ const TaskCard = ({
   const dueDateColor = getDueDateColor(task.dueDate);
 
   return (
-    <motion.div
+<motion.div
+      ref={ref}
       layout
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -156,6 +157,8 @@ const TaskCard = ({
       </div>
     </motion.div>
   );
-};
+});
+
+TaskCard.displayName = 'TaskCard';
 
 export default TaskCard;
